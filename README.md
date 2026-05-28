@@ -1,11 +1,9 @@
-# Fatec - Apresentação MatPlotLib
+# Projeto Fatec: Binance klines on MatPlotLib
 
-View data on Binance using Python MatPlotLib
-
-## reference
+## Reference
 
 https://github.com/orlandosaraivajr/FATEC_1SEM26_LP2/issues/6
 
 ## license
 
-[MIT](./LICENSe)
+[MIT](./LICENSE)
