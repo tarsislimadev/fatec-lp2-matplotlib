@@ -11,13 +11,13 @@ Matplotlib is a comprehensive Python 2D plotting library that produces publicati
 
 ## Installation
 
-Install via pip (recommended):
+Install via [pip](#) (recommended):
 
 ```
-pip install matplotlib
+python -m pip install matplotlib
 ```
 
-If you use conda:
+If you use [conda](#):
 
 ```
 conda install matplotlib
@@ -31,7 +31,7 @@ Using `pyplot` (quick):
 import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4]
- y = [10, 20, 25, 30]
+y = [10, 20, 25, 30]
 
 plt.plot(x, y, label='Line')
 plt.scatter(x, y, color='red')
