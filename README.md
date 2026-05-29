@@ -1,4 +1,4 @@
-# Project Fatec: Binance klines on MatPlotLib
+# Project Fatec: Binance klines on Matplotlib
 
 A small demo that fetches Binance kline (candlestick) data and visualizes it with Matplotlib. It includes a live plot that seeds recent history via the REST API and then subscribes to Binance's WebSocket kline stream for real-time updates.
 
@@ -38,6 +38,32 @@ Common options:
 - Implement automatic reconnect with exponential backoff.
 
 If you want any of the above, open an issue or submit a PR.
+
+## Static plot (historical)
+
+To fetch historical klines and save a static close-price plot:
+
+```bash
+python scripts/historical_plot.py --symbol BTCUSDT --interval 1m --limit 200 --output figures/btcusdt_1m.png
+```
+
+The generated image will be saved under `figures/`.
+
+## Files
+
+- [scripts/live_ws_plot.py](scripts/live_ws_plot.py) — live WebSocket plot (real-time updates)
+- [scripts/historical_plot.py](scripts/historical_plot.py) — fetch historical klines and save PNG
+- [requirements.txt](requirements.txt) — Python dependencies
+
+## Setup (optional)
+
+It's recommended to use a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # or .venv\Scripts\Activate.ps1 on Windows PowerShell
+python -m pip install -r requirements.txt
+```
 
 ## References
 
