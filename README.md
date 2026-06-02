@@ -4,7 +4,7 @@ A small demo that fetches Binance kline (candlestick) data and visualizes it wit
 
 ## Quick start (guests)
 
-0. Clone the repository
+1. Clone the repository
 
 ```bash
 git clone https://github.com/tarsislimadev/fatec-lp2-matplotlib.git
